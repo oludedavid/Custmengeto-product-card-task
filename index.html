@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mengeto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <span class="logo">mengeto</span>
+      <!-- desktop navigation -->
+      <nav class="main-navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav_links" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav_links" href="#">About</a></li>
+          <li class="nav-item"><a class="nav_links" href="#">Contact</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-main-navigation"
+        >
+          🍔
+        </button>
+      </nav>
+
+      <!-- mobile navigation -->
+      <nav
+        class="mobile-main-navigation"
+        id="mobile-main-navigation"
+        aria-label="Mobile Navigation"
+      >
+        <button class="close-nav" aria-label="Close navigation">✕</button>
+        <ul class="mobile-nav-list">
+          <span class="logo">mengeto</span>
+          <li class="mobile_nav-item">
+            <a class="mobile_nav_links" href="#">Home</a>
+          </li>
+          <li class="mobile_nav-item">
+            <a class="mobile_nav_links" href="#">About</a>
+          </li>
+          <li class="mobile_nav-item">
+            <a class="mobile_nav_links" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main_container" id="main-content">
+      <!-- left and right sections -->
+      <section class="content-left">
+        <h1 class="heading">Warenkorb</h1>
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th class="table-header header1" colspan="2">Artikel</th>
+              <th class="table-header">Preis</th>
+              <th class="table-header">Anzahl</th>
+              <th class="table-header">Zwishen-summe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-item item1" colspan="2">Item 1</td>
+              <td class="table-item item2 item-price">1.1190€</td>
+              <td class="table-item item3 quantity">
+                <input
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+              </td>
+              <td class="table-item item4 total-sum">1.1190€</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="content-right">
+        <section class="order-cost-summary">
+          <h2>Zussamenfassung</h2>
+          <div class="order">
+            <details>
+              <summary class="summary-content1">
+                <span class="summary-content"
+                  >Geschatzte Steuern und Versandgebuehren</span
+                >
+                <span class="drop-icon">▼</span>
+              </summary>
+              <div class="summary-details">
+                <div class="summary-item">
+                  <div class="detail-content">Zwishensumme</div>
+                  <div class="detail-content">1.190.62€</div>
+                </div>
+                <div class="summary-item">
+                  <div class="detail-content">Versand</div>
+                  <div class="detail-content">0.00€</div>
+                </div>
+                <div class="summary-item">
+                  <div class="detail-content">Steuern</div>
+                  <div class="detail-content">0.00€</div>
+                </div>
+                <div class="summary-item">
+                  <div class="detail-content">Steuern</div>
+                  <div class="detail-content">0.00€</div>
+                </div>
+                <div class="summary-item">
+                  <div class="detail-content">Steuern</div>
+                  <div class="detail-content">0.00€</div>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="order">
+            <details>
+              <summary class="summary-content2">
+                <span class="summary-content">Gutscheinecode anwenden</span>
+                <span class="drop-icon">▼</span>
+              </summary>
+
+              <p style="width: 100%; text-align: center">rabbattcode: none</p>
+            </details>
+          </div>
+          <button class="order-button">Zur Kasse gehen</button>
+        </section>
+        <div class="notice-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet
+          esse quibusdam voluptates officiis eum iure necessitatibus saepe.
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <nav class="footer-navigation" aria-label="Footer Navigation">
+        <span class="logo">mengeto</span>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav_links" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav_links" href="#">About</a></li>
+          <li class="nav-item"><a class="nav_links" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2023 My Site. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
